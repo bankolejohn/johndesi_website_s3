@@ -1,0 +1,11 @@
+# Personal files
+cv.txt
+
+# macOS
+.DS_Store
+
+# Kiro
+.kiro/
+
+# VSCode
+.vscode/
