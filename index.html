@@ -17,16 +17,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #080b12;
-      --bg-2:      #0c1018;
-      --bg-3:      #111620;
-      --border:    rgba(255,255,255,0.07);
-      --border-2:  rgba(255,255,255,0.12);
-      --accent:    #2563eb;
-      --accent-2:  #3b82f6;
-      --text:      #e8eaf0;
-      --text-2:    #9aa0b4;
-      --text-3:    #5c6478;
+      --bg:        #0f1117;
+      --bg-2:      #161b27;
+      --bg-3:      #1c2333;
+      --border:    rgba(255,255,255,0.09);
+      --border-2:  rgba(255,255,255,0.16);
+      --accent:    #0ea5e9;
+      --accent-2:  #38bdf8;
+      --accent-glow: rgba(14,165,233,0.25);
+      --text:      #f1f5f9;
+      --text-2:    #94a3b8;
+      --text-3:    #64748b;
       --mono:      'JetBrains Mono', monospace;
       --sans:      'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
@@ -75,7 +76,7 @@
       margin-bottom: 0.5rem;
     }
 
-    p { color: var(--text-2); line-height: 1.7; }
+    p { color: var(--text-2); line-height: 1.75; font-size: 0.975rem; }
 
     .mono {
       font-family: var(--mono);
@@ -125,7 +126,7 @@
     .btn-primary:hover {
       background: var(--accent-2);
       transform: translateY(-1px);
-      box-shadow: 0 4px 20px rgba(37,99,235,0.35);
+      box-shadow: 0 4px 24px var(--accent-glow);
     }
 
     .btn-ghost {
@@ -220,8 +221,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 70% 60% at 60% 40%, rgba(37,99,235,0.07) 0%, transparent 65%),
-        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(37,99,235,0.04) 0%, transparent 60%);
+        radial-gradient(ellipse 70% 60% at 60% 40%, rgba(14,165,233,0.09) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(56,189,248,0.05) 0%, transparent 60%);
       pointer-events: none;
     }
 
@@ -344,8 +345,8 @@
       align-items: center;
       justify-content: center;
       border-radius: 6px;
-      background: rgba(37,99,235,0.1);
-      border: 1px solid rgba(37,99,235,0.2);
+      background: rgba(14,165,233,0.1);
+      border: 1px solid rgba(14,165,233,0.2);
       margin-bottom: 1.25rem;
       color: var(--accent-2);
     }
@@ -817,25 +818,25 @@
             </p>
             <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
               <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(14,165,233,0.15); border: 1px solid rgba(14,165,233,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <span style="font-size: 0.875rem; color: var(--text-2);">Reduced deployment times by <strong style="color: var(--text);">30%</strong> and build times by <strong style="color: var(--text);">60%</strong> at Epistimis via Jenkins and GitHub Actions optimisation</span>
               </div>
               <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(14,165,233,0.15); border: 1px solid rgba(14,165,233,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <span style="font-size: 0.875rem; color: var(--text-2);">Cut client cloud deployment costs by <strong style="color: var(--text);">20%</strong> through strategic AWS architecture at Wolperg</span>
               </div>
               <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(14,165,233,0.15); border: 1px solid rgba(14,165,233,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <span style="font-size: 0.875rem; color: var(--text-2);">Graduated <strong style="color: var(--text);">top 1%</strong> from HNG internship, selected from over 20,000 engineers</span>
               </div>
               <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(14,165,233,0.15); border: 1px solid rgba(14,165,233,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <span style="font-size: 0.875rem; color: var(--text-2);">Deployed production EKS clusters on Terraform with GitOps workflows using Argo CD and GitHub Actions</span>
